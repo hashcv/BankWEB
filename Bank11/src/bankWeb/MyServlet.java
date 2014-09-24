@@ -33,26 +33,36 @@ public class MyServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		InputOutput input = new IODatabase();
+		InputOutput input = new IOTxt();
 		input.read();
 		
 		response.setContentType("text/html;charset=UTF-8");
 	      PrintWriter out = response.getWriter();
 
 	      try {
-	         out.println("<!DOCTYPE html>");  // HTML 5
+	         out.println("<!DOCTYPE html>");
 	         out.println("<html><head>");
 	         out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>");
 	         out.println("<title>MyBank</title></head>");
 	         out.println("<body>");
-	         out.println("<h1>Hello, %username%, welcome to MyBank</h1>");  
-
+	         out.println("<h1>Hello, welcome to MyBank</h1>");  
+	         out.println("<br>");
+	         out.println("<textarea rows='20' cols='80'>");
 	     
 	        for (Customer cust:custs){
 	        	out.println(cust.toString());
+	        	out.println("<br>");
 	        }
+	         out.println("<br>");
 	         
-	         
+	         for (Account acc:accs){
+		        	out.println(acc.toString());
+		        	out.println("<br>");
+		        } 
+	         out.println("</textarea>");
+	         out.println("<br>");
+	         out.println("<button>INSERT</button>");
+	         out.println("<button>UPDATE</button>");
 	         
 	         
 	         
