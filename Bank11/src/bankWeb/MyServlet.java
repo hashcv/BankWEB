@@ -1,3 +1,4 @@
+package bankWeb;
 
 
 import java.io.IOException;
@@ -35,10 +36,9 @@ public class MyServlet extends HttpServlet {
 	         out.println("<!DOCTYPE html>");  // HTML 5
 	         out.println("<html><head>");
 	         out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>");
-	         String title = "title";
-	         out.println("<title>" + title + "</title></head>");
+	         out.println("<title>MyBank</title></head>");
 	         out.println("<body>");
-	         out.println("<h1>" + title + "</h1>");  
+	         out.println("<h1>Hello, %username%, welcome to MyBank</h1>");  
 	     
 	         out.println("HELLO");
 	         out.println("</body></html>");
