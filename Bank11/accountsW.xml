@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<account>
+    <number>951798687</number>
+    <name>acc4</name>
+    <currency>USD</currency>
+    <debit>103.0</debit>
+    <creditLimit>13.0</creditLimit>
+    <customer>
+        <ipn>1212121213</ipn>
+        <address>Address3</address>
+        <phone>+380992233446</phone>
+        <email>jh3@gmail.com</email>
+    </customer>
+</account>
